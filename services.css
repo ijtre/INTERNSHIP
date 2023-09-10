@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mouse Memoirs', sans-serif;
+    background-color: white;
+  }
+  
+  .containerService {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .servmain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: calc(20vh / 2); 
+  }
+  
+  .image-item {
+    text-align: center;
+  }
+  
+  .SeImg {
+    width: 20vh;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  p {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 30px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+   
+    .servmain {
+      gap: calc(20vh / 4);
+    }
+  
+    .SeImg {
+      width: 15vh;
+    }
+  
+    p {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+    .servmain {
+      gap: calc(20vh / 8);
+    }
+  
+    .SeImg {
+      width: 10vh;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  

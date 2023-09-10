@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Mina&family=Mouse+Memoirs&display=swap');
+
+
+:root {
+  --orange-color: #FF9933;
+  --white-color: #FFFFFF;
+  --green-color: #138808;
+  --black-color: #000000;
+  --blue-color: #1145FE;
+  --skin-color: #E8BF8E;
+}
+.greencover{
+   width:100vw;
+   height: 50px;
+   background-color: green;
+   padding:20px ;
+ }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+
+.head1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  color: green;
+}
+
+.donation-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donation-type {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  margin-left: 60px; 
+  margin-right: 60px; 
+}
+
+.textcont {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-family: 'Inter';
+}
+
+img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.donate-btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: orange;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+.donate-btn:hover {
+  background-color: green;
+}
+
+
+@media (min-width: 768px) {
+  .donation-types {
+    gap: 40px;
+  }
+}
+
+.manual{
+  text-align: center;
+  margin-top: 40px;
+  clear: both;
+}
+
+.payment {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+}
+
+.infopay {
+  background-color:white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 40px;
+}
+
+.upi{
+  text-align: center;
+  margin-top: 40px;
+  clear: both;
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+  background-color: white
+}
+.upitext{
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+}
+.upiimg{
+  width:350px ;
+  height: auto;
+}
+.or{
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+  color: #138808;
+}
+.uptext{
+  font-size: 40px;
+}

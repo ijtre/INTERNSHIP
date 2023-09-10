@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Mina&family=Mouse+Memoirs&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.navigation_bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 1%;
+    background-color: orange;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 24px;
+    display: inline;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

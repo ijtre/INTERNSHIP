@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Mina&family=Mouse+Memoirs&display=swap');
+
+body {
+    font-family: 'Mouse Memoirs', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* Main */
+.main-container {
+    position: relative;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-text.show {
+    opacity: 1;
+}
+
+.heading {
+    font-size: 70px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    background: linear-gradient(180deg, #ff9933 21.15%, rgba(255, 255, 255, 0.81) 52.4%, #138808 77.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.small-text {
+    padding-left: 1px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.btn {
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+    border-radius: 13px;
+    padding: 8px 16px;
+    font-weight: normal;
+    transition: all 400ms;
+    background-color: #ff9933;
+    text-decoration: none;
+    transition: all 400ms;
+    margin-top: 16px;
+}
+
+.btn:hover {
+    background-color: #138808;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 25px;
+    }
+
+    .small-text {
+        font-size: 9px;
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 6px 6px;
+    }
+}
+
+/* About */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.heading-about {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-top: 20px;
+    color: #ff9933;
+}
+
+.about-img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boxwhole {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box1,
+.box2,
+.box3 {
+    flex: 1 0 calc(50% - 20px);
+    margin-bottom: 40px;
+    background-color: rgba(255, 153, 51, 0.5);
+      text-align: center; 
+      border-radius: 40px;
+      border-width: 4px;
+      border-style: solid;
+      border-color: black;
+      padding: 2%;
+}
+
+.box1:nth-child(odd),
+.box2:nth-child(even),
+.box3:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.org-struc,
+.vision,
+.mission {
+    font-family: 'Mouse Memoirs';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #138808;
+    
+    mix-blend-mode: normal;
+}
+
+.org-body,
+.vbody,
+.mbody {   
+    font-family: 'Mina', sans-serif;
+    font-style: normal;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.0em;
+    color: #000000;
+    font-size: 30px;
+      }   
+
+
+
+@media only screen and (max-width: 768px) {
+    .heading-about {
+        font-size: 24px;
+    }
+
+    .org-struc,
+    .vision,
+    .mission {
+        font-size: 20px;
+    }
+
+    .org-body,
+    .vbody,
+    .mbody {
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        flex: 1 0 50%;
+        margin-right: 0;
+    }
+}
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.box1 {
+    animation: floatAnimation 3s infinite ease-in-out;
+    animation-delay: 1s; /* Adjust the delay for the first box */
+}
+
+.box2 {
+    animation: floatAnimation 3s infinite ease-in-out;
+    animation-delay: 1.2s; /* Adjust the delay for the second box */
+}
+
+.box3 {
+    animation: floatAnimation 3s infinite ease-in-out;
+    animation-delay: 1.4s; /* Adjust the delay for the third box */
+}
+.animate-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .animate-container.animate-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+/* about-page-finishes */
+
+/* story-starts */
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.heading-story {
+    text-align: center;
+    font-family: 'Mouse Memoirs';
+    font-style: normal;
+    font-size: 55px;
+    color: #FF9933;
+    padding: 2%;
+}
+
+.story-image {
+    padding-bottom: 2%;
+}
+
+.box4 {
+    width: 100%;
+    background-color: rgba(255, 153, 51, 0.5);
+    text-align: center;
+    border-radius: 40px;
+    border: 4px solid #000000;
+    padding: 2%;
+}
+
+.story-body {
+    font-family: 'Mina', sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading-story {
+        font-size:30px;
+    }
+
+    .story-body {
+        font-size: 20px;
+        line-height: 18px;
+    }
+}
+
+
+
+/* info-page */
+.informative-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  padding-top: 30px;
+}
+
+.infobox {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+}
+
+.infobox:hover {
+  transform: scale(1.05);
+}
+
+.donate {
+  background-color: orange;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.dontext {
+  background-color: green;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 15px;  
+}
+
+.adopt {
+  background-color: green;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.textadopt {
+  background-color: orange;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 20px;  
+}
+
+.fundraise {
+  background-color: orange;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.fundraisetext {
+  background-color: green;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 20px;  
+}
+
+.volunteer {
+  background-color: green;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.volunteertext {
+  text-align: center;
+  background-color: orange;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 70px;  
+}
+
+.donate:hover,
+.adopt:hover,
+.fundraise:hover,
+.volunteer:hover {
+  color: black;
+}
+
+.dontext,
+.textadopt,
+.fundraisetext,
+.volunteertext {
+  font-size: 46px;
+  line-height: 90px;
+  transition: color 0.3s ease-in-out;
+}
+
+.dontext:hover,
+.textadopt:hover,
+.fundraisetext:hover,
+.volunteertext:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .informative-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .infobox {
+    flex: 1;
+    max-width: 70%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .donate,
+  .adopt,
+  .fundraise,
+  .volunteer {
+    font-size: 30px;
+  }
+
+  .dontext,
+  .textadopt,
+  .fundraisetext,
+  .volunteertext {
+    font-size: 18px;
+    line-height: 15px;
+    padding: 10px;
+  }
+}
+/* container-finishes */
+.ataglance-container {
+  position: relative;
+  background-color: green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.ata {
+  font-family: 'Mouse Memoirs';
+  font-style: normal;
+  font-size: 62px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.rescue-section,
+.vaccinated-section,
+.sterilized-section,
+.adopted-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: green;
+  transition: background-color 0.3s;
+  text-align: center;
+  border-radius: 10px;
+  border: 4px solid black;
+  margin: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.rescue-section:hover,
+.vaccinated-section:hover,
+.sterilized-section:hover,
+.adopted-section:hover {
+  background-color: white;
+}
+
+.restext,
+.vacitest,
+.stertest,
+.adotest {
+  font-family: 'Mouse Memoirs';
+  font-style: normal;
+  font-size: 25px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imgrescue,
+.imgvacci,
+.imgster,
+.imgado {
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .ataglance-container {
+    height: 80px;
+    margin-top: 100px;
+  }
+
+  .ata {
+    font-size: 40px;
+  }
+
+  .rescue-section,
+  .vaccinated-section,
+  .sterilized-section,
+  .adopted-section {
+    height: 150px;
+    margin: 10px;
+  }
+
+  .restext,
+  .vacitest,
+  .stertest,
+  .adotest {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ataglance-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .ata {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .rescue-section,
+  .vaccinated-section,
+  .sterilized-section,
+  .adopted-section {
+    height: 180px;
+    margin: 10px 0;
+  }
+
+  .restext,
+  .vacitest,
+  .stertest,
+  .adotest {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+
+/* ending */
+.ending-container {
+  position: relative;
+  width: 100%;
+  top: 600px;
+  background-color: #138808;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+footer {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-section {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.left-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-top: 20px;
+}
+
+.sociallinks {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; 
+}
+
+.sociallinks li {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.sociallinks a {
+  color: #fff;
+}
+
+.middle {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.ing {
+  width: 40px;
+  height: auto;
+}
+
+/
+@media only screen and (max-width: 768px) {
+  .ending-container {
+    top: 300px;
+  }
+
+  .left-section {
+    justify-content: center;
+  }
+}
